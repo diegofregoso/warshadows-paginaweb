@@ -1,12 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buenos dias alegria, buenos dias señor sol</title>
+    <title>Reino de Sombras - Juego Medieval</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel+Decorative&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hola como le va</h1>
-    
+    <header>
+        <div class="header-content">
+            <div class="logo">REINO <span>DE SOMBRAS</span></div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#historia">Historia</a></li>
+                    <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#descargas">Descargas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>FORJA TU LEYENDA</h1>
+            <p>Un mundo oscuro de intrigas medievales te espera. Enfrenta criaturas legendarias, desentraña conspiraciones y forja tu destino en este épico RPG de acción.</p>
+            <div class="hero-buttons">
+                <a href="#descargas" class="btn btn-primary">Descargar Demo</a>
+                <a href="#trailer" class="btn">Ver Tráiler</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="caracteristicas">
+        <h2>CARACTERÍSTICAS DEL JUEGO</h2>
+        <div class="features-grid">
+            <!-- Características se generan dinámicamente con JS -->
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="social-links">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Steam"><i class="fab fa-steam"></i></a>
+        </div>
+        <p>© 2025 Reino de Sombras. Todos los derechos reservados.</p>
+        <p>Desarrollado por Diego Gregorio Carlos Nolasco</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
