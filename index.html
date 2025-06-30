@@ -1,76 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reino de Sombras - Juego Medieval</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>War shadows - Juego Medieval</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Cinzel+Decorative&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="logo">REINO <span>DE SOMBRAS</span></div>
-            <button class="menu-toggle" aria-label="Toggle menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#galeria">Galería</a></li>
-                    <li><a href="#historia">Historia</a></li>
-                    <li><a href="#caracteristicas">Características</a></li>
-                    <li><a href="#descargas">Descargas</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <section class="hero" id="inicio">
-        <div class="hero-content">
-            <h1>FORJA TU LEYENDA</h1>
-            <p>Un mundo oscuro de intrigas medievales te espera. Enfrenta criaturas legendarias, desentraña conspiraciones y forja tu destino en este épico RPG de acción.</p>
-            <div class="hero-buttons">
-                <a href="#descargas" class="btn btn-primary">Descargar Demo</a>
-                <a href="#trailer" class="btn">Ver Tráiler</a>
-            </div>
-        </div>
-    </section>
+  <!-- HEADER -->
+  <header>
+    <div class="header-content">
+      <div class="logo">War <span>Shadows</span></div>
+      <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#caracteristicas">Características</a></li>
+          <li><a href="#descargas">Descargas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section class="features" id="caracteristicas">
-        <h2>CARACTERÍSTICAS DEL JUEGO</h2>
-        <div class="features-grid">
-            <!-- Características se generan dinámicamente con JS -->
-        </div>
-    </section>
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <h1>⚔️ FORJA TU LEYENDA ⚔️ </h1>
+      <p>Sumérgete en un mundo medieval lleno de peligros, alianzas y enemigos ancestrales. ¿Tendrás el valor para restaurar la paz en el Reino de Sombras?</p>
+      <div class="hero-buttons">
+        <a href="#descargas" class="btn btn-primary">🎮 Descargar Demo</a>
+        <a href="#trailer" class="btn">▶️ Ver Tráiler</a>
+      </div>
+    </div>
+  </section>
 
-    <section class="gallery" id="galeria">
-        <h2>GALERÍA DE JUEGOS</h2>
-        <!-- Galería se generará dinámicamente con JS -->
-         <div class="features-grid">
-         <video src="public/Video.mp4" style="border-radius: 1em;"></video>
-         </div>
-    </section>
+  <!-- CARACTERÍSTICAS -->
+  <section class="features" id="caracteristicas">
+    <h2>🔥 CARACTERÍSTICAS DEL JUEGO 🔥</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <i class="fas fa-dragon"></i>
+        <h3>Enemigos Épicos</h3>
+        <p>Enfrenta criaturas mitológicas y jefes colosales con mecánicas desafiantes.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-map"></i>
+        <h3>Mundo Abierto</h3>
+        <p>Explora castillos, bosques oscuros, catacumbas y aldeas misteriosas.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-user-ninja"></i>
+        <h3>Clases y Habilidades</h3>
+        <p>Elige entre caballero, hechicero o asesino y domina tu árbol de habilidades.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-scroll"></i>
+        <h3>Historia Ramificada</h3>
+        <p>Tus decisiones cambiarán el curso de la historia... ¿héroe o villano?</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="history" id="historia">
+  <!-- GALERÍA -->
+  <section class="gallery" id="galeria">
+    <h2>🖼️ GALERÍA DEL JUEGO</h2>
+    <div class="gallery-grid">
+        <img src="public/screenshot1.jpg" alt="Batalla en el castillo" />
+        <img src="public/screenshot2.jpg" alt="Mapa del reino" />
+        <img src="public/screenshot3.jpg" alt="Enemigo legendario" />
         
-        <h2>HISTORIA DEL JUEGO</h2>
-    
-    </section>
+        
+        <video controls src="public/Video.mp4" style="border-radius: 1em;"></video>
+    </div>
+  </section>
 
-    <footer id="contacto">
-        <div class="social-links">
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
-            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-            <a href="#" aria-label="Steam"><i class="fab fa-steam"></i></a>
-        </div>
-        <p>© 2025 Reino de Sombras. Todos los derechos reservados.</p>
-        <p>Desarrollado por Diego Gregorio Carlos Nolasco</p>
-    </footer>
+  <!-- HISTORIA -->
+  <section class="history" id="historia">
+    <h2>📖 HISTORIA DEL JUEGO</h2>
+    <div class="history-content">
+      <p>
+        Hace siglos, el Reino de Sombras fue gobernado por un linaje justo... hasta que un antiguo poder oscuro fue liberado. Ahora, el equilibrio se ha roto. Tú, un guerrero marcado por el destino, debes levantar la espada y restaurar la luz.
+      </p>
+      <blockquote>"La oscuridad no teme a la muerte... teme al recuerdo del sol."</blockquote>
+    </div>
+  </section>
 
-    <script src="js/script.js"></script>
+  <!-- DESCARGAS -->
+  <section class="downloads" id="descargas">
+    <h2>⬇️ DESCARGAS</h2>
+    <div class="downloads-grid">
+      <a class="btn btn-download" href="public/demo-win.zip" download><i class="fas fa-download"></i> Demo para Windows</a>
+      <a class="btn btn-download" href="public/demo-linux.tar.gz" download><i class="fas fa-download"></i> Demo para Linux</a>
+      <a class="btn btn-download" href="public/manual.pdf" target="_blank"><i class="fas fa-book"></i> Manual del Jugador (PDF)</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contacto">
+    <h2>🔗 REDES Y CONTACTO</h2>
+    <div class="social-links">
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="#" aria-label="Steam"><i class="fab fa-steam"></i></a>
+    </div>
+    <p>© 2025 Reino de Sombras. Todos los derechos reservados.</p>
+    <p>Desarrollado por Diego Gregorio Carlos Nolasco</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

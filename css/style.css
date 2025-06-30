@@ -2,9 +2,10 @@
 :root {
     --primary-dark: #0a0a0a;
     --secondary-dark: #1a1a1a;
-    --accent-gold: #c9a227;
+    --accent-gold: #d4af37;
     --accent-red: #8b0000;
-    --text-primary: #e0e0e0;
+    --accent-glow: rgba(212, 175, 55, 0.4);
+    --text-primary: #eae6d9;
     --text-secondary: #b8b8b8;
 }
 
@@ -20,16 +21,18 @@ body {
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
+    background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png'); /* Textura sutil */
 }
 
 /* Header */
 header {
-    background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(30, 30, 30, 0.7));
+    background: linear-gradient(to right, #0a0a0a, #1a1a1a);
     border-bottom: 3px solid var(--accent-gold);
     padding: 1rem 0;
     position: fixed;
     width: 100%;
     z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
 
 .header-content {
@@ -45,16 +48,15 @@ header {
     font-family: 'Cinzel Decorative', serif;
     font-size: clamp(1.8rem, 4vw, 2.5rem);
     color: var(--accent-gold);
-    text-shadow: 2px 2px 4px #000;
-    letter-spacing: 2px;
-    z-index: 1001;
+    text-shadow: 3px 3px 8px #000;
+    letter-spacing: 3px;
 }
 
 .logo span {
     color: var(--accent-red);
 }
 
-/* Menú de navegación */
+/* Navegación */
 .nav-menu ul {
     display: flex;
     list-style: none;
@@ -69,11 +71,13 @@ header {
     border-radius: 5px;
     transition: all 0.3s ease;
     position: relative;
+    font-weight: bold;
 }
 
 .nav-menu a:hover {
     color: var(--accent-gold);
-    background-color: rgba(201, 162, 39, 0.1);
+    background-color: var(--accent-glow);
+    box-shadow: 0 0 10px var(--accent-gold);
 }
 
 .nav-menu a::after {
@@ -98,10 +102,9 @@ header {
     color: var(--accent-gold);
     font-size: 1.8rem;
     cursor: pointer;
-    z-index: 1001;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
     height: 100vh;
     display: flex;
@@ -111,7 +114,7 @@ header {
     position: relative;
     overflow: hidden;
     padding-top: 80px;
-    background: url('https://example.com/medieval-bg.jpg') no-repeat center center/cover;
+    background: url('https://images.unsplash.com/photo-1609259439947-97d682579b8c?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
 }
 
 .hero::before {
@@ -121,7 +124,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(ellipse at center, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.8) 100%);
+    background: radial-gradient(circle at center, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.9) 100%);
     z-index: 0;
 }
 
@@ -129,28 +132,31 @@ header {
     max-width: 800px;
     padding: 2rem;
     z-index: 1;
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hero h1 {
     font-family: 'Cinzel Decorative', serif;
-    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-size: clamp(2.5rem, 6vw, 3rem);
     margin-bottom: 1.5rem;
     color: var(--accent-gold);
-    text-shadow: 3px 3px 6px #000;
-    line-height: 1.2;
+    text-shadow: 4px 4px 10px #000;
 }
 
 .hero p {
     font-size: clamp(1.1rem, 2vw, 1.5rem);
     margin-bottom: 2.5rem;
-    line-height: 1.6;
-}
-
-.hero-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
 }
 
 /* Botones */
@@ -160,14 +166,12 @@ header {
     background-color: var(--accent-red);
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-weight: bold;
     font-size: 1.1rem;
     transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    box-shadow: 0 0 0 transparent;
+    border: 2px solid transparent;
 }
 
 .btn-primary {
@@ -177,10 +181,11 @@ header {
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 12px var(--accent-gold);
+    border-color: var(--accent-gold);
 }
 
-/* Sección de características */
+/* Características */
 .features {
     padding: 5rem 2rem;
     background-color: rgba(10, 10, 10, 0.8);
@@ -204,28 +209,30 @@ header {
 }
 
 .feature-card {
-    background-color: rgba(26, 26, 26, 0.7);
+    background-color: rgba(26, 26, 26, 0.85);
     padding: 2rem;
     border-radius: 10px;
     border-left: 4px solid var(--accent-gold);
-    transition: transform 0.3s ease;
-    opacity: 0;
-    transform: translateY(50px);
-}
-
-.feature-card.visible {
-    opacity: 1;
-    transform: translateY(0);
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transform: scale(1);
 }
 
 .feature-card:hover {
-    transform: translateY(-10px) scale(1.02);
+    transform: scale(1.03);
+    box-shadow: 0 0 20px var(--accent-gold);
 }
 
 .feature-card h3 {
     color: var(--accent-gold);
     font-size: 1.4rem;
     margin-bottom: 1rem;
+}
+
+.feature-card i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--accent-gold);
 }
 
 .feature-card p {
@@ -237,7 +244,8 @@ footer {
     background-color: #000;
     padding: 3rem 2rem;
     text-align: center;
-    border-top: 1px solid var(--accent-gold);
+    border-top: 2px solid var(--accent-gold);
+    font-family: 'Cinzel Decorative', serif;
 }
 
 .social-links {
@@ -251,35 +259,26 @@ footer {
 .social-links a {
     color: var(--text-primary);
     font-size: 1.5rem;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .social-links a:hover {
     color: var(--accent-gold);
+    transform: scale(1.2);
 }
 
 footer p {
     margin-bottom: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--text-secondary);
 }
 
-/* Media Queries para Responsive */
-@media (max-width: 992px) {
-    .header-content {
-        padding: 0 1.5rem;
-    }
-    
-    .nav-menu ul {
-        gap: 1rem;
-    }
-}
-
+/* Responsividad */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
     }
-    
+
     .nav-menu {
         position: fixed;
         top: 0;
@@ -294,46 +293,28 @@ footer p {
         transition: right 0.3s ease;
         z-index: 1000;
     }
-    
+
     .nav-menu.active {
         right: 0;
     }
-    
+
     .nav-menu ul {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
     }
-    
+
     .hero-content {
         padding: 2rem 1rem;
     }
-    
+
     .hero-buttons {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .btn {
         width: 100%;
         max-width: 250px;
-    }
-}
-
-@media (max-width: 480px) {
-    .header-content {
-        padding: 0 1rem;
-    }
-    
-    .features {
-        padding: 3rem 1rem;
-    }
-    
-    .feature-card {
-        padding: 1.5rem;
-    }
-    
-    footer {
-        padding: 2rem 1rem;
     }
 }
