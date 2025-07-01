@@ -318,3 +318,65 @@ footer p {
         max-width: 250px;
     }
 }
+ .cont{
+    display: flex; 
+    justify-content: center;     
+    align-items: center;
+    
+}
+.histori{
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: 1em;
+    padding: 1em;
+}
+.downloads-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em;
+    margin-top: 2rem;
+    background-color: rgba(26, 26, 26, 0.85);
+    border: 2px solid var(--accent-gold);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    font-family: 'Cinzel Decorative', serif;
+}
+
+.downloads-table th,
+.downloads-table td {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(201, 162, 39, 0.3);
+}
+
+.downloads-table th {
+    background-color: var(--accent-gold);
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.downloads-table td {
+    color: var(--text-secondary);
+    background-color: rgba(10, 10, 10, 0.8);
+}
+
+.downloads-table tr:hover td {
+    background-color: rgba(201, 162, 39, 0.1);
+    color: var(--accent-gold);
+}
+
+.table-link {
+    color: var(--accent-gold);
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px dashed var(--accent-gold);
+    transition: color 0.3s ease;
+}
+
+.table-link:hover {
+    color: white;
+    border-color: white;
+}

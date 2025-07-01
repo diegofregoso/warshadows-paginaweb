@@ -71,19 +71,24 @@
   <section class="gallery" id="galeria">
     <h2>🖼️ GALERÍA DEL JUEGO</h2>
     <div class="gallery-grid">
+      
+        <div class="cont">
         <img src="public/screenshot1.jpg" alt="Batalla en el castillo" />
         <img src="public/screenshot2.jpg" alt="Mapa del reino" />
         <img src="public/screenshot3.jpg" alt="Enemigo legendario" />
+        <br>
+        </div>
         
-        
+        <div class="cont">
         <video controls src="public/Video.mp4" style="border-radius: 1em;"></video>
+        </div>
     </div>
   </section>
 
   <!-- HISTORIA -->
   <section class="history" id="historia">
     <h2>📖 HISTORIA DEL JUEGO</h2>
-    <div class="history-content">
+    <div class="history-content histori" >
       <p>
         Hace siglos, el Reino de Sombras fue gobernado por un linaje justo... hasta que un antiguo poder oscuro fue liberado. Ahora, el equilibrio se ha roto. Tú, un guerrero marcado por el destino, debes levantar la espada y restaurar la luz.
       </p>
@@ -92,20 +97,41 @@
   </section>
 
   <!-- DESCARGAS -->
-  <section class="downloads" id="descargas">
-    <h2>⬇️ DESCARGAS</h2>
-    <div class="downloads-grid">
-      <a class="btn btn-download" href="public/demo-win.zip" download><i class="fas fa-download"></i> Demo para Windows</a>
-      <a class="btn btn-download" href="public/demo-linux.tar.gz" download><i class="fas fa-download"></i> Demo para Linux</a>
-      <a class="btn btn-download" href="public/manual.pdf" target="_blank"><i class="fas fa-book"></i> Manual del Jugador (PDF)</a>
-    </div>
-  </section>
+ <section class="downloads" id="descargas">
+  <h2>⬇️ DESCARGAS</h2>
+  
+  <a class="btn btn-download" href="public/demo-win.zip" download>
+    <i class="fas fa-download"></i> Demo actual
+  </a>
+
+  <div class="downloads-grid cont">
+    <table class="downloads-table">
+      <thead>
+        <tr>
+          <th>Versión</th>
+          <th>Fecha</th>
+          <th>Cantidad de descargas</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1.0.0</td>
+          <td>2025-06-30</td>
+          <td>1,024</td>
+          <td><a href="public/demo-win.zip" download class="table-link">Descargar</a></td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</section>
+
 
   <!-- FOOTER -->
   <footer id="contacto">
     <h2>🔗 REDES Y CONTACTO</h2>
     <div class="social-links">
-      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
       <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
       <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
       <a href="#" aria-label="Steam"><i class="fab fa-steam"></i></a>
