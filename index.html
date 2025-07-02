@@ -14,6 +14,7 @@
   <header>
     <div class="header-content">
       <div class="logo">War <span>Shadows</span></div>
+      
       <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
       <nav class="nav-menu">
         <ul>
@@ -25,20 +26,24 @@
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
+      
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero" id="inicio">
-    <div class="hero-content">
-      <h1>⚔️ FORJA TU LEYENDA ⚔️ </h1>
-      <p>Sumérgete en un mundo medieval lleno de peligros, alianzas y enemigos ancestrales. ¿Tendrás el valor para restaurar la paz en el Reino de Sombras?</p>
-      <div class="hero-buttons">
-        <a href="#descargas" class="btn btn-primary">🎮 Descargar Demo</a>
-        <a href="#trailer" class="btn">▶️ Ver Tráiler</a>
-      </div>
+ <section class="hero" id="inicio">
+  <div class="hero-content">
+    <div class="hero-logo-box">
+      <img src="public/logo.jpg" alt="Logo del juego" class="hero-logo" />
     </div>
-  </section>
+    <h1>⚔️ FORJA TU LEYENDA ⚔️ </h1>
+    <p>Sumérgete en un mundo medieval lleno de peligros, alianzas y enemigos ancestrales. ¿Tendrás el valor para restaurar la paz en el Reino de Sombras?</p>
+    <div class="hero-buttons">
+      <a href="#descargas" class="btn btn-primary">🎮 Descargar Demo</a>
+      <a href="#trailer" class="btn">▶️ Ver Tráiler</a>
+    </div>
+  </div>
+</section>
+
 
   <!-- CARACTERÍSTICAS -->
   <section class="features" id="caracteristicas">
@@ -67,23 +72,41 @@
     </div>
   </section>
 
-  <!-- GALERÍA -->
-  <section class="gallery" id="galeria">
-    <h2>🖼️ GALERÍA DEL JUEGO</h2>
-    <div class="gallery-grid">
-      
-        <div class="cont">
-        <img src="public/screenshot1.jpg" alt="Batalla en el castillo" />
-        <img src="public/screenshot2.jpg" alt="Mapa del reino" />
-        <img src="public/screenshot3.jpg" alt="Enemigo legendario" />
-        <br>
-        </div>
-        
-        <div class="cont">
-        <video controls src="public/Video.mp4" style="border-radius: 1em;"></video>
-        </div>
+<section class="gallery" id="galeria">
+  <h2 class="section-title">🖼️ GALERÍA DEL JUEGO</h2>
+  <div class="gallery-grid">
+    
+    <!-- Imagen destacada -->
+    <div class="gallery-card">
+      <img src="public/principal.jpg" alt="Batalla en el castillo" />
+      <div class="gallery-caption">
+        <h3>Batalla en el Castillo</h3>
+        <p>Una intensa batalla medieval librada en las antiguas murallas del reino. Acero, fuego y honor.</p>
+      </div>
     </div>
-  </section>
+
+    <!-- Descripción del juego -->
+    <div class="gallery-card">
+      <div class="gallery-text">
+        <h3>Sobre el Juego</h3>
+        <p>
+          Embárcate en una aventura ambientada en la Edad Media, donde caballeros, dragones y castillos se entrelazan en una historia épica de gloria, traición y conquista. Vive combates reales con una ambientación oscura y envolvente.
+        </p>
+      </div>
+    </div>
+
+    <!-- Video del juego -->
+    <div class="gallery-card">
+      <video controls src="public/Video.mp4"></video>
+      <div class="gallery-caption">
+        <h3>Tráiler Oficial</h3>
+        <p>Sumérgete en el mundo del juego con este adelanto visual lleno de emoción y acción medieval.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- HISTORIA -->
   <section class="history" id="historia">
